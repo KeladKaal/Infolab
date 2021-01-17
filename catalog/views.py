@@ -20,7 +20,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 def show_clubs(request):
     club_list = Clubs.objects.order_by('clubs_id')
-    template = loader.get_template('catalog/show_clubs.html')
+
     context = {
         'club_list': club_list,
     }
