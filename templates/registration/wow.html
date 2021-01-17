@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Wow</h1>
+  <p>You are an <em>Idiot</em>!</p>
+
+
+    <p><a href="{% url 'logout' %}">log out again?</a></p>
+    <p><a href="{% url 'password_change' %}">Change password?</a></p>
+    <p><a href="{% url 'catalog:show_clubs' %}">Show clubs</a></p>
+{% endblock %}

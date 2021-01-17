@@ -1,0 +1,15 @@
+{% if club_list %}
+    <ul>
+
+      {% for club in club_list %}
+
+
+          <a href= "/catalog/detail/{{club.clubs_id}} " >{{ club.firstname }}</a>
+          <br>
+      </li>
+      {% endfor %}
+    </ul>
+
+{% else %}
+    <p>No clubs are available.</p>
+{% endif %}
